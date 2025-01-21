@@ -15,7 +15,7 @@ app.use(cors({
         'http://localhost:5173',
         'http://localhost:5174',
         'https://client-onlineshoppingwebsite-mern-stack.onrender.com',
-        'https://seller-onlineshoppingwebsite-mern-stack.onrender.com/'
+        'https://seller-onlineshoppingwebsite-mern-stack.onrender.com'
     ], 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, // If using cookies
