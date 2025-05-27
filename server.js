@@ -10,7 +10,10 @@ const multer = require('multer');
 const multerGridFSStorage = require('multer-gridfs-storage');
 const Grid = require('gridfs-stream');
 
-
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}));
 
 app.use(express.urlencoded({ limit: '10mb', extended: true })); // Increase URL-encoded payload size limit
 app.use(express.json({ limit: '100mb' })); // Increase JSON payload size limit
